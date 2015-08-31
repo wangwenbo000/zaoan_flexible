@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta content="modeName=640-12" name="grid" />
     <script src="js/flexible_css.js"></script>
     <script src="js/flexible.js"></script>
     <script src="js/makegrid.js"></script>
@@ -12,11 +13,46 @@
         height: 3.75rem;
         border: 1px solid #000;
         background: #ccc;
-        font-size: 0.5rem
+        /*font-size: 32px;*/
       }
+      [data-dpr="2"] div {
+        font-size: 24px;
+        }
+
+        [data-dpr="3"] div {
+          font-size: 48px;
+        }
     </style>
+    <script>
+      // lib.flexible.makeGrid({
+      //   designWidth:640, // 设计稿宽度
+      //   designUnit:1, // 设计稿最小单位a（以px为单位）
+      //   columnCount:12, // 栅格列数
+      //   columnXUnit:3, // 栅格列宽（以a为单位）
+      //   gutterXUnit:0, // 栅格间距（以a为单位）
+      //   edgeXUnit:10, // 页面左右边距（以a为单位）
+      //   className:'zaoan' // 栅格样式的名称（可省略，默认为grid）
+      // });
+      lib.flexible.makeGridMode("640-12");
+    </script>
   </head>
   <body>
-    <div class="box">hello中文字符</div>
+    <div class="box"><p>hello中文字符</p></div>
+    <div class="grid">
+    <div class="col-4">a</div>
+    <div class="col-4">a</div>
+    <div class="col-4">a</div>
+</div>
+
+<div class="grid">
+    <div class="col-6">a</div>
+    <div class="col-6">a</div>
+</div>
+
+<div class="grid">
+    <div class="col-3">a</div>
+    <div class="col-4">a</div>
+    <div class="col-5">a</div>
+</div>
   </body>
 </html>
