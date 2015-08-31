@@ -18,16 +18,16 @@
     }
   </style>
   <script>
-    // lib.flexible.makeGrid({
-    //   designWidth:640, // 设计稿宽度
-    //   designUnit:1, // 设计稿最小单位a（以px为单位）
-    //   columnCount:12, // 栅格列数
-    //   columnXUnit:3, // 栅格列宽（以a为单位）
-    //   gutterXUnit:0, // 栅格间距（以a为单位）
-    //   edgeXUnit:10, // 页面左右边距（以a为单位）
-    //   className:'zaoan' // 栅格样式的名称（可省略，默认为grid）
-    // });
-    lib.flexible.makeGridMode("640-12");
+    lib.flexible.makeGrid({
+      designWidth:640, // 设计稿宽度
+      designUnit:4, // 设计稿最小单位a（以px为单位）
+      columnCount:12, // 栅格列数
+      columnXUnit:11.4, // 栅格列宽（以a为单位）
+      gutterXUnit:1, // 栅格间距（以a为单位）
+      edgeXUnit:6, // 页面左右边距（以a为单位）
+      // className:'zaoan' // 栅格样式的名称（可省略，默认为grid）
+    });
+    // lib.flexible.makeGridMode("640-12");
   </script>
 </head>
 
@@ -42,64 +42,63 @@
       </div>
       <div class="col-4"><img src="img/"></div>
     </div>
-    <ul class="grid choose">
-      <li class="col-3 chooseDay">
-        <a href="javascript:;">
-          <span>周一</span>
-          21
-        </a>
+    <ul class="grid">
+      <li class="col-3 chooseDay select">
+        <span>周一</span>
+        <i class="triangle_select"></i>
+        <a href="javascript:;">21</a>
       </li>
       <li class="col-3 chooseDay">
-        <a href="javascript:;" class="select">
-          <span>周一</span>
-          21
-        </a>
+        <span>周一</span>
+        <i class="triangle_select"></i>
+        <a href="javascript:;">22</a>
       </li>
       <li class="col-3 chooseDay">
-        <a href="javascript:;">
-          <span>周一</span>
-          21
-        </a>
+        <span>周一</span>
+        <i class="triangle_select"></i>
+        <a href="javascript:;">23</a>
       </li>
       <li class="col-3 chooseDay">
-        <a href="javascript:;">
-          <span>周一</span>
-          21
-        </a>
-      </li>
-    </ul>
-    <ul class="grid choose">
-      <li class="col-3 chooseDay">
-        <a href="javascript:;">
-          <span>周一</span>
-          21
-        </a>
+        <span>周一</span>
+        <i class="triangle_select"></i>
+        <a href="javascript:;">24</a>
       </li>
       <li class="col-3 chooseDay">
-        <a href="javascript:;">
-          <span>周一</span>
-          21
-        </a>
+        <span>周一</span>
+        <i class="triangle_select"></i>
+        <a href="javascript:;">25</a>
       </li>
       <li class="col-3 chooseDay">
-        <a href="javascript:;">
-          <span>周一</span>
-          21
-        </a>
+        <span>周一</span>
+        <i class="triangle_select"></i>
+        <a href="javascript:;">26</a>
       </li>
       <li class="col-3 chooseDay">
-        <a href="javascript:;">
-          <span>周一</span>
-          21
-        </a>
+        <span>周一</span>
+        <i class="triangle_select"></i>
+        <a href="javascript:;">27</a>
+      </li>
+      <li class="col-3 chooseDay">
+        <span>周一</span>
+        <i class="triangle_select"></i>
+        <a href="javascript:;">28</a>
       </li>
     </ul>
     <div class="grid">
       <div class="col-12 notice">
-        每天22:00前可预订明日早餐
+        每天22:00前可预订明日早餐&times;
       </div>
     </div>
   </div>
+<div class="grid-warp">
+  <div class="grid">
+    <div class="col-2"><input type="button" value="-"></div>
+    <div class="col-2">每天</div>
+    <div class="col-4"><input type="text" value="1"></div>
+    <div class="col-2">份</div>
+    <div class="col-2"><input type="button" value="+"></div>
+  </div>
+</div>
 </body>
 
 </html>

@@ -3,45 +3,94 @@ body, html{
 }
 $white:#fff;
 $notice:#fbfae9;
-
-[data-dpr="1"] .grid-warp{
+input[type=button]{
+	-webkit-appearance:none;
+	outline:none
+}
+input[type=text]{
+  -webkit-appearance: none;
+  display: block;
+  width: auto;
+  height: 1.40625rem-0.015625rem;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 0;
+}
+[data-dpr="1"] .grid-warp:first-child, [data-dpr="1"] .grid-warp:nth-child(2){
   width: 10rem;
   margin: 0 auto;
 }
-.grid-warp{
+[data-dpr="1"] .chooseDay{
+  font-size: 70px;
+  span{
+    font-size: 20px;
+  }
+}
+.grid-warp:first-child{
   background: url('../img/bg.jpg') no-repeat;
   background-size: cover;
+}
+.grid-warp:nth-child(2){
+  margin-top: 0.21875rem;
+  input[type="button"]{
+    width: 1.40625rem;
+    height: 1.40625rem;
+    border: none;
+    color: $white;
+    border-radius: 0;
+    background-color: #bde4eb;
+  }
 }
 .chooseDay{
   background:$white;
   text-align: center;
   font-size: 160px;
   font-weight: 300;
+  position: relative;
+  margin-top: 0.08rem;
+  span{
+    display: block;
+    font-size: 32px;
+    padding: 0 0.2rem;
+    text-align: left;
+    position: absolute;
+    top:0.2rem;
+  }
+  i{
+    width: 0;
+    height: 0;
+    border-bottom: 0.5625rem solid #f4f4f4;
+    border-left: 0.5625rem solid transparent;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  a{
+    display: block;
+    padding: 0.6375rem-0.09375rem 0 0.3875rem-0.09375rem 0;
+    border: 0.09375rem solid $white;
+    color: #404040;
+    text-decoration: none;
+  }
 }
 .select{
-  border: 0.09375rem solid #ff6700;
-  padding: 0.21875rem 0 0.59375rem-0.09375rem 0;
-}
-.chooseDay a>span{
-  display: block;
-  font-size: 32px;
-  text-align: left;
-  padding: 0 0.2rem;
-}
-.chooseDay a{
-  display: block;
-  padding: 0.21875rem 0 0.59375rem 0;
-  color: #404040;
-  text-decoration: none;
-}
-.choose{
-  margin-top: 0.16rem;
+  a{
+    display: block;
+    color: #404040;
+    border: 0.09375rem solid #ff6700;
+    text-decoration: none;
+  }
+  i{
+    border-bottom: 0.5625rem solid #ff6700;
+    border-left: 0.5625rem solid transparent;
+  }
 }
 .notice{
   height: 1.375rem;
   line-height: 1.375rem;
   background-color: $notice;
   margin-top: 0.28125rem;
+  text-indent: 0.2rem;
 }
 .header{
   padding-top: 0.5rem;
