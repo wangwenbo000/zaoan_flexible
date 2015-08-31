@@ -1,0 +1,48 @@
+body, html{
+  background-color: #efefef;
+}
+$white:#fff;
+$notice:#fbfae9;
+
+[data-dpr="1"] .grid-warp{
+  width: 10rem;
+  margin: 0 auto;
+}
+.grid-warp{
+  background: url('../img/bg.jpg') no-repeat;
+  background-size: cover;
+}
+.chooseDay{
+  background:$white;
+  text-align: center;
+  font-size: 160px;
+  font-weight: 300;
+}
+.select{
+  border: 0.09375rem solid #ff6700;
+  padding: 0.21875rem 0 0.59375rem-0.09375rem 0;
+}
+.chooseDay a>span{
+  display: block;
+  font-size: 32px;
+  text-align: left;
+  padding: 0 0.2rem;
+}
+.chooseDay a{
+  display: block;
+  padding: 0.21875rem 0 0.59375rem 0;
+  color: #404040;
+  text-decoration: none;
+}
+.choose{
+  margin-top: 0.16rem;
+}
+.notice{
+  height: 1.375rem;
+  line-height: 1.375rem;
+  background-color: $notice;
+  margin-top: 0.28125rem;
+}
+.header{
+  padding-top: 0.5rem;
+}
