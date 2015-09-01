@@ -8,6 +8,7 @@
   <script src="js/flexible.js"></script>
   <script src="js/makegrid.js"></script>
   <link href="stylesheets/index.css" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/iconfont.css" rel="stylesheet" type="text/css" />
   <title>早安早安</title>
   <style>
     [data-dpr="2"] div {
@@ -36,11 +37,18 @@
     <div class="grid header">
       <div class="col-4"><img src="img/logo.svg"></div>
       <div class="col-4">
+        <div class="header_month">
         <p>
           2015/8月
         </p>
+        <p>
+          一周早餐
+        </p>
+        </div>
       </div>
-      <div class="col-4"><img src="img/"></div>
+      <div class="col-4">
+        <img src="img/face.jpg" class="user">
+      </div>
     </div>
     <ul class="grid">
       <li class="col-3 chooseDay select">
@@ -79,28 +87,71 @@
         <a href="javascript:;">27</a>
       </li>
       <li class="col-3 chooseDay">
-        <span>周一</span>
+        <!-- <span>周一</span> -->
         <i class="triangle_select"></i>
-        <a href="javascript:;">28</a>
+        <a href="javascript:;"><i class="iconfont">&#xe60b;</i></a>
       </li>
     </ul>
     <div class="grid">
       <div class="col-12 notice">
-        每天22:00前可预订明日早餐&times;
+        <i class="iconfont">&#xe602;</i> 每天22:00前可预订明日早餐
+        <span>&times;</span>
       </div>
     </div>
   </div>
 <div class="grid-warp">
   <div class="grid">
     <div class="col-12">
-    <input type="button" value="-">
+    <a href="javascript:;"><i class="iconfont">&#xe603;</i></a>
     <span>每天</span>
     <input type="text" value="1">
     <span>份</span>
-    <input type="button" value="+">
+    <a href="javascript:;"><i class="iconfont">&#xe605;</i></a>
   </div>
   </div>
 </div>
+<div class="grid-warp">
+  <div class="grid">
+    <div class="col-12">
+      <i class="iconfont sel">&#xe608;</i>
+      <i class="iconfont sel">&#xe608;</i>
+      <select class="form-control" v-model="expressTime">
+        <option value="0">配送时间段</option>
+        <option>7:00-7:30</option>
+        <option>7:30-8:00</option>
+        <option>8:00-8:30</option>
+        <option>8:30-9:00</option>
+        <option>9:00-9:30</option>
+        <option>9:30-10:00</option>
+      </select>
+      <select class="form-control" v-model="receiveWay">
+        <option value="0">接收方式</option>
+        <!-- <option>早安盒子</option> -->
+        <option>公司前台</option>
+        <option>延迟配送</option>
+      </select>
+    </div>
+    <div class="col-12">
+      <a href="javascript:;"><i class="iconfont">&#xe609;</i>请添加接收地址</a>
+    </div>
+  </div>
+</div>
+<div class="footerlogo"></div>
+<div >
+<div class="footer">
+  <a href="javascript:;" class="submit">预定</a>
+  <a href="javascript:;" class="order sel_menu">
+    <span><i class="iconfont">&#xe606;</i></span>
+    下单
+  </a>
+  <a href="javascript:;" class="menu">
+    <span><i class="iconfont">&#xe604;</i></span>
+    图鉴
+  </a>
+  <div class="price">
+    <p>原价 ￥<span><strike>300</strike><span></p>
+    <p>折扣 ￥<span>168<span></p>
+  </div>
+</div>
 </body>
-
 </html>
