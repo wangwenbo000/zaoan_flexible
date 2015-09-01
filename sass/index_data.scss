@@ -1,0 +1,90 @@
+[data-dpr="1"] .chooseDay{
+  font-size: 70px;
+  span{
+    font-size: 22px;
+  }
+}
+[data-dpr="2"] .chooseDay{
+  font-size: 90px;
+  span{
+    font-size: 24px;
+  }
+}
+.chooseDay{
+  background:$white;
+  text-align: center;
+  font-size: 160px;
+  font-weight: 200;
+  position: relative;
+  margin-top: 0.08rem;
+  height: 2.4375rem-0.09375rem*2;
+  span{
+    display: block;
+    font-size: 40px;
+    padding: 0 0.2rem;
+    text-align: left;
+    position: absolute;
+    top:0.2rem;
+  }
+  .triangle_select{
+    width: 0;
+    height: 0;
+    border-bottom: 0.5625rem solid #f4f4f4;
+    border-left: 0.5625rem solid transparent;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  a{
+    display: block;
+    padding: 0.6375rem-0.1475rem 0 0.3875rem-0.17375rem 0;
+    border: 0.09375rem solid $white;
+    color: #404040;
+    height: 1.3575rem;
+    text-decoration: none;
+  }
+}
+.chooseDay:last-child{
+  .iconfont{
+    display: block;
+    font-size: 120px;
+    color: #ffc600;
+    margin-top: 0.2rem;
+    top: 1rem;
+  }
+}
+.select{
+  a{
+    display: block;
+    color: #404040;
+    border: 0.09375rem solid #ff6700;
+    text-decoration: none;
+  }
+  .triangle_select{
+    border-bottom: 0.5625rem solid #ff6700;
+    border-left: 0.5625rem solid transparent;
+  }
+  .triangle_select:after{
+    font-family:"iconfont" !important;
+    /*font-size:16px;*/
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\e607";
+    color: #fff;
+    position: absolute;
+    display: block;
+    right: 8px;
+    top: 26px;
+    font-size: 26px;
+  }
+  span{
+    color: #ff6700;
+  }
+}
+.empty{
+  a,span{
+    color: #efefef;
+  }
+}

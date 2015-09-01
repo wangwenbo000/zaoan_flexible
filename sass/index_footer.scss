@@ -1,0 +1,86 @@
+.footerlogo{
+  height: 0.65625rem;
+  margin-top: 0.3rem;
+  background: url('../img/footerlogo.png') no-repeat center top;
+  background-size: 40%;
+  padding-bottom: 1.53125rem;
+}
+
+[data-dpr="2"] .footer{
+  .submit{
+    font-size: 40px;
+  }
+  .order, .menu{
+    font-size: 26px;
+    span{
+      font-size: 60px;
+    }
+  }
+  .price{
+    p{
+      font-size: 26px;
+      span{
+        font-size: 42px;
+      }
+    }
+  }
+
+}
+.footer{
+  width: 100%;
+  position: fixed;
+  background: $white;
+  height: 1.53125rem;
+  bottom: 0;
+  z-index: 10;
+  .submit{
+    height: 1.53125rem;
+    background-color: #ffc600;
+    display: block;
+    width: 3.3125rem;
+    float: right;
+    text-align: center;
+    line-height: 1.53125rem;
+    color: #5d5d5d;
+    font-size: 60px;
+  }
+  .order, .menu{
+    float: right;
+    display: block;
+    width: 1.78125rem;
+    border-left: 1px solid #d0d0d0;
+    text-align: center;
+    height: 100%;
+    // line-height: 1.1rem;
+    color: #5d5d5d;
+    font-size: 40px;
+    span{
+      display: block;
+      // text-align: center;
+      font-size: 80px;
+      line-height: 1rem;
+    }
+  }
+  .sel_menu{
+      color:#ff6700;
+  }
+  .price {
+    p{
+      text-indent: 0.32rem;
+      font-size: 40px;
+      span{
+        font-size: 60px;
+        font-weight: 200;
+      }
+    }
+    p:first-child{
+      margin-top: 0.24375rem;
+      span{
+        color: #b2b2b2;
+      }
+    }
+    p:last-child{
+      color: #ff6700;
+    }
+  }
+}

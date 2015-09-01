@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="modeName=640-12" name="grid" />
+  <meta content="telephone=no" name="format-detection">
   <script src="js/flexible_css.js"></script>
   <script src="js/flexible.js"></script>
   <script src="js/makegrid.js"></script>
@@ -12,7 +13,7 @@
   <title>早安早安</title>
   <style>
     [data-dpr="2"] div {
-      font-size: 24px;
+      font-size: 32px;
     }
     [data-dpr="3"] div {
       font-size: 48px;
@@ -57,39 +58,39 @@
         <a href="javascript:;">21</a>
       </li>
       <li class="col-3 chooseDay">
-        <span>周一</span>
+        <span>周二</span>
         <i class="triangle_select"></i>
         <a href="javascript:;">22</a>
       </li>
       <li class="col-3 chooseDay">
-        <span>周一</span>
+        <span>周三</span>
         <i class="triangle_select"></i>
         <a href="javascript:;">23</a>
       </li>
       <li class="col-3 chooseDay">
-        <span>周一</span>
+        <span>周四</span>
         <i class="triangle_select"></i>
         <a href="javascript:;">24</a>
       </li>
       <li class="col-3 chooseDay">
-        <span>周一</span>
+        <span>周五</span>
         <i class="triangle_select"></i>
         <a href="javascript:;">25</a>
       </li>
-      <li class="col-3 chooseDay">
-        <span>周一</span>
+      <li class="col-3 chooseDay empty">
+        <span>周六</span>
         <i class="triangle_select"></i>
         <a href="javascript:;">26</a>
       </li>
       <li class="col-3 chooseDay">
-        <span>周一</span>
+        <span>周日</span>
         <i class="triangle_select"></i>
         <a href="javascript:;">27</a>
       </li>
       <li class="col-3 chooseDay">
-        <!-- <span>周一</span> -->
         <i class="triangle_select"></i>
-        <a href="javascript:;"><i class="iconfont">&#xe60b;</i></a>
+        <a href="javascript:;"><i class="iconfont">&#xe600;</i></a>
+        <span>预定一周</span>
       </li>
     </ul>
     <div class="grid">
@@ -151,6 +152,47 @@
   <div class="price">
     <p>原价 ￥<span><strike>300</strike><span></p>
     <p>折扣 ￥<span>168<span></p>
+  </div>
+</div>
+
+<div class="alert">
+  <span><i class="iconfont">&#xe60a;</i></span>
+  <p>请选择收货地址</p>
+</div>
+
+<div class="modal">
+  <div class="content">
+    <div class="modal_header">
+      选择收货地址
+      <span>&times;</span>
+    </div>
+    <div class="modal_content">
+      <ul>
+        <li>
+          <p><span>王文博</span><span> 15117909848</span></p>
+          <p>望京西园四区 424栋1906</p>
+        </li>
+        <li>
+          <p><span>王文博</span><span> 15117909848</span></p>
+          <p>望京西园四区 424栋1906</p>
+        </li>
+        <li>
+          <p><span>王文博</span><span> 15117909848</span></p>
+          <p>望京西园四区 启阳路中青大厦 泰安市嘉德现代城 424栋1906</p>
+        </li>
+        <li>
+          <p><span>王文博</span><span> 15117909848</span></p>
+          <p>望京西园四区 424栋1906</p>
+        </li>
+        <li>
+          <p><span>王文博</span><span> 15117909848</span></p>
+          <p>望京西园四区 424栋1906</p>
+        </li>
+      </ul>
+    </div>
+    <div class="modal_footer">
+      <a href="javascript:;"><i class="iconfont">&#xe605;</i> 新建收货地址</a>
+    </div>
   </div>
 </div>
 </body>

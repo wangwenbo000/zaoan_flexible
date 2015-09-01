@@ -1,0 +1,40 @@
+.grid-warp:nth-child(3){
+  .grid [class^="col-"]{
+    background-color: $white;
+    line-height: 1.40625rem;
+    border: 1px solid #d0d0d0;
+    margin-top: -1px;
+  }
+  .sel{
+    display: block;
+    position: absolute;
+    color: #d0d0d0;
+  }
+  .sel:first-child{
+    margin-left: 40%;
+  }
+  .sel:nth-child(2){
+    margin-left: 86%;
+  }
+  select{
+    border: none;
+    border-radius: 0;
+    background-color: $white;
+    -webkit-appearance: none;
+    width: 50%;
+    float: left;
+    height: 1.40625rem;
+    color: #222a34;
+  }
+  select:last-child{
+    border-left: 1px solid #d0d0d0;
+  }
+  a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #bfbfbf;
+    text-decoration: none;
+  }
+}

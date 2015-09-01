@@ -1,0 +1,21 @@
+.header_month{
+  color: $white;
+  border-left: 2px solid $white;
+  margin-top: 0.16rem;
+  margin-left: 0.3rem;
+  p{
+    font-size: 40px;
+    text-indent: 0.2rem;
+  }
+}
+.user{
+  width: 1rem;
+  height: 1rem;
+  display: block;
+  overflow: hidden;
+  border-radius: 50%;
+  float: right;
+}
+.header{
+  padding-top: 0.5rem;
+}
