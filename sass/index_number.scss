@@ -10,6 +10,9 @@
     font-size: 100px;
     text-decoration: none;
   }
+  a:active{
+    box-shadow:0 0 0.6rem #76c8d7 inset; ;
+  }
   a:first-child{
     float: left;
     line-height: 1.40625rem;

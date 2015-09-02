@@ -37,4 +37,8 @@
     color: #bfbfbf;
     text-decoration: none;
   }
+  a:active{
+    box-shadow:0 0 0.6rem #bde4eb inset;
+    color: #bde4eb;
+  }
 }

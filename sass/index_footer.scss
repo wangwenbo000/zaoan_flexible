@@ -42,7 +42,11 @@
     text-align: center;
     line-height: 1.53125rem;
     color: #5d5d5d;
+    text-decoration: none;
     font-size: 60px;
+  }
+  .submit:active{
+    box-shadow:0 0 1rem #f68d47 inset;  
   }
   .order, .menu{
     float: right;
@@ -51,6 +55,7 @@
     border-left: 1px solid #d0d0d0;
     text-align: center;
     height: 100%;
+    text-decoration: none;
     // line-height: 1.1rem;
     color: #5d5d5d;
     font-size: 40px;

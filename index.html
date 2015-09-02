@@ -11,14 +11,6 @@
   <link href="stylesheets/index.css" rel="stylesheet" type="text/css" />
   <link href="stylesheets/iconfont.css" rel="stylesheet" type="text/css" />
   <title>早安早安</title>
-  <style>
-    [data-dpr="2"] div {
-      font-size: 32px;
-    }
-    [data-dpr="3"] div {
-      font-size: 48px;
-    }
-  </style>
   <script>
     lib.flexible.makeGrid({
       designWidth:640, // 设计稿宽度
@@ -27,9 +19,11 @@
       columnXUnit:11.4, // 栅格列宽（以a为单位）
       gutterXUnit:1, // 栅格间距（以a为单位）
       edgeXUnit:6, // 页面左右边距（以a为单位）
-      // className:'zaoan' // 栅格样式的名称（可省略，默认为grid）
     });
-    // lib.flexible.makeGridMode("640-12");
+    window.onload = function(){
+      document.body.addEventListener('touchstart', function () { });
+    }
+
   </script>
 </head>
 
@@ -170,23 +164,23 @@
       <ul>
         <li>
           <p><span>王文博</span><span> 15117909848</span></p>
-          <p>望京西园四区 424栋1906</p>
+          <p><i class="iconfont">&#xe609;</i> 望京西园四区 424栋1906</p>
         </li>
         <li>
           <p><span>王文博</span><span> 15117909848</span></p>
-          <p>望京西园四区 424栋1906</p>
+          <p><i class="iconfont">&#xe609;</i> 望京西园四区 424栋1906</p>
         </li>
         <li>
           <p><span>王文博</span><span> 15117909848</span></p>
-          <p>望京西园四区 启阳路中青大厦 泰安市嘉德现代城 424栋1906</p>
+          <p><i class="iconfont">&#xe609;</i> 望京西园四区 启阳路中青大厦 泰安市嘉德现代城 424栋1906</p>
         </li>
         <li>
           <p><span>王文博</span><span> 15117909848</span></p>
-          <p>望京西园四区 424栋1906</p>
+          <p><i class="iconfont">&#xe609;</i> 望京西园四区 424栋1906</p>
         </li>
         <li>
           <p><span>王文博</span><span> 15117909848</span></p>
-          <p>望京西园四区 424栋1906</p>
+          <p><i class="iconfont">&#xe609;</i> 望京西园四区 424栋1906</p>
         </li>
       </ul>
     </div>

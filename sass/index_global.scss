@@ -1,5 +1,7 @@
 body, html{
   background-color: #efefef;
+  -webkit-tap-highlight-color:transparent;
+  -webkit-user-select:none;
 }
 
 $white:#fff;
@@ -22,9 +24,20 @@ input[type=text]{
   border: 1px solid #fff;
   border-radius: 0;
 }
-[data-dpr="1"] .grid-warp:first-child, [data-dpr="1"] .grid-warp:nth-child(2){
+[data-dpr="1"] div {
+  font-size: 20px;
+}
+[data-dpr="2"] div {
+  font-size: 32px;
+}
+[data-dpr="3"] div {
+  font-size: 48px;
+}
+[data-dpr="1"] .grid-warp:first-child,
+[data-dpr="1"] .grid-warp:nth-child(2),
+[data-dpr="1"] .grid-warp:nth-child(3){
   width: 10rem;
-  margin: 0 auto;
+  margin: 0.21875rem auto 0 auto;
 }
 .grid-warp:first-child{
   background: url('../img/bg.jpg') no-repeat;
