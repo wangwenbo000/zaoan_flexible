@@ -22,7 +22,6 @@
     text-indent: 0.2rem;
     border-bottom: 1px solid $border;
     background: url('../img/addresscolor.jpg') repeat-x;
-    background-size: 60%;
     font-size: $px32;
     color: $gray5d;
     span{
@@ -30,66 +29,19 @@
       float: right;
       font-size: $px32;
       width: 1rem;
+      line-height: 1.8rem;
     }
   }
   .modal_content{
     max-height: 10.75rem-1.375rem-1.53125rem;
     overflow: auto;
     -webkit-overflow-scrolling : touch;
-    ul{
-      width: 100%;
-      color: $gray5d;
-      li{
-        padding: 0.5rem;
-        position: relative;
-        border-bottom: 1px solid $border;
-        p{
-          line-height: 0.6rem;
-          span{
-            font-size: $px38;
-          }
-        }
-        p:last-child{
-          font-size: $px24;
-        }
-      }
-      li:nth-child(2n){
-        background-color: #fafafa;
-      }
-      li:first-child:before{
-        font-family:"iconfont" !important;
-        font-style:normal;
-        -webkit-font-smoothing: antialiased;
-        -webkit-text-stroke-width: 0.2px;
-        -moz-osx-font-smoothing: grayscale;
-        content: "\e607 Usually";
-        color: $white;
-        display: block;
-        position: absolute;
-        font-size: $px20;
-        padding: 0 0.2rem;
-        top: 0.2rem;
-        right: 0.2rem;
-        border-radius: 50px;
-        background-color: $yellow;
-      }
-      li:active{
-        background-color: $noneState;
-      }
-    }
   }
   .modal_footer{
     height: 1.53125rem;
     text-align: center;
-    a{
-      display: block;
-      width: 100%;
-      height: 100%;
-      line-height: 1.53125rem;
-      background-color: $yellow;
-      color: $gray5d;
-      font-size: $px38;
-      text-decoration: none;
+    a:active{
+      box-shadow:0 0 1rem #f68d47 inset;
     }
   }
 }

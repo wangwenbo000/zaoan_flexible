@@ -25,3 +25,16 @@
     }
   }
 }
+.emptyOrder{
+  text-align: center;
+  a{
+    display: block;
+    text-align: center;
+    width: 100%;
+    background-color: $buttonBlue;
+    color: $white;
+  }
+  a:active{
+    box-shadow:0 0 1rem #76c8d7 inset;
+  }
+}

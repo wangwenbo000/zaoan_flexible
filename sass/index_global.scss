@@ -38,6 +38,8 @@ $noticeClose:0.5625rem;
 $numberBtn:0.78125rem;
 $footerIcon:0.6875rem;
 
+$selectBorderWidth:0.09375rem;
+
 a, a:hover{
   color: $defalutWord;
   text-decoration: none;
@@ -48,7 +50,6 @@ body, html{
   -webkit-user-select:none;
   color:$defalutWord;
 }
-
 // @include font-face("iconfont",
 //   font-files(
 //   '../font/iconfont.eot',
@@ -66,18 +67,14 @@ input[type=text]{
   @include border-radius(0)
 }
 div{
-  font-size: 0.46875rem;
+  font-size: $px24;
 }
-
 .grid-warp{
   width: 10rem;
   margin: 0 auto;
   position: relative;
 }
-.aweek{
-  background: url('../img/bg.jpg') no-repeat;
-  background-size: cover;
-}
+
 .grid-warp:nth-child(2),
 .grid-warp:nth-child(3){
   margin-top: 0.21875rem;

@@ -1,5 +1,5 @@
 .grid-warp:nth-child(2){
-  a{
+  .subtraction,.plus{
     width: 1.40625rem;
     height: 1.41625rem;
     color: $white;
@@ -10,14 +10,14 @@
     font-size: $numberBtn;
   }
 
-  a:active{
+  .subtraction:active,.plus:active{
     box-shadow:0 0 0.6rem #76c8d7 inset;
   }
-  a:first-child{
+  .subtraction{
     float: left;
     line-height: 1.40625rem;
   }
-  a:last-child{
+  .plus{
     float: right;
     line-height: 1.60625rem;
   }
