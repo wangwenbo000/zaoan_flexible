@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta content="modeName=640-12" name="grid" />
+  <meta content="telephone=no" name="format-detection">
+  <meta name = "apple-mobile-web-app-capable" content = "yes" >
+  <script src="js/flexible_css.js"></script>
+  <script src="js/flexible.js"></script>
+  <script src="js/makegrid.js"></script>
+  <link href="stylesheets/index.css" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/iconfont.css" rel="stylesheet" type="text/css" />
+  <title>早安早安</title>
+  <script>
+    lib.flexible.makeGrid({
+      designWidth:640, // 设计稿宽度
+      designUnit:4, // 设计稿最小单位a（以px为单位）
+      columnCount:12, // 栅格列数
+      columnXUnit:11.4, // 栅格列宽（以a为单位）
+      gutterXUnit:1, // 栅格间距（以a为单位）
+      edgeXUnit:6, // 页面左右边距（以a为单位）
+    });
+    window.onload = function(){
+      document.body.addEventListener('touchstart', function () { });
+    };
+  </script>
+</head>
+
+<body>
+  <div class="grid-warp">
+    <div class="grid">
+        <table class="col-12 orderlist">
+          <tbody>
+            <tr></tr>
+          <tr>
+            <td>
+              <p>20150822150553791</p>
+              <p><span>下单时间：</span>2015-08-22</p>
+            </td>
+            <td><span>待支付</span></td>
+            <td>查看</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr></tr>
+          <tr>
+            <td>
+              <p>20150822150553791</p>
+              <p><span>下单时间：</span>2015-08-22</p>
+            </td>
+            <td><span>已支付</span></td>
+            <td><a href="javascript:;">查看</a></td>
+          </tr>
+        </tbody>
+        </table>
+    </div>
+  </div>
+
+  <div class="footerlogo"></div>
+
+  <div class="footer">
+    <a href="javascript:;" class="goOrder">过往订单</a>
+    <a href="javascript:;" class="goingOn">进行中</a>
+
+    <a href="javascript:;" class="order sel_menu">
+      <span><i class="iconfont">&#xe606;</i></span>
+      下单
+    </a>
+    <a href="javascript:;" class="menu">
+      <span><i class="iconfont">&#xe609;</i></span>
+      地址
+    </a>
+  </div>
+</body>
+</html>

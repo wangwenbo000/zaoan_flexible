@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta content="modeName=640-12" name="grid" />
+  <meta content="telephone=no" name="format-detection">
+  <meta name = "apple-mobile-web-app-capable" content = "yes" >
+  <script src="js/flexible_css.js"></script>
+  <script src="js/flexible.js"></script>
+  <script src="js/makegrid.js"></script>
+  <link href="stylesheets/index.css" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/iconfont.css" rel="stylesheet" type="text/css" />
+  <title>早安早安</title>
+  <script>
+    lib.flexible.makeGrid({
+      designWidth:640, // 设计稿宽度
+      designUnit:4, // 设计稿最小单位a（以px为单位）
+      columnCount:12, // 栅格列数
+      columnXUnit:11.4, // 栅格列宽（以a为单位）
+      gutterXUnit:1, // 栅格间距（以a为单位）
+      edgeXUnit:6, // 页面左右边距（以a为单位）
+    });
+    window.onload = function(){
+      document.body.addEventListener('touchstart', function () { });
+    };
+  </script>
+</head>
+
+<body>
+  <div class="grid-warp fail">
+    <div class="grid">
+      <div class="col-12">
+        <img src="img/fail.jpg">
+        <a href="javascript:;">查看订单</a>
+        <a href="javascript:;">返回首页</a>
+      </div>
+    </div>
+  </div>
+  <div class="footerlogo"></div>
+</body>
+</html>

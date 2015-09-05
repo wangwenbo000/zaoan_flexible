@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta content="modeName=640-12" name="grid" />
   <meta content="telephone=no" name="format-detection">
+  <meta name = "apple-mobile-web-app-capable" content = "yes" >
   <script src="js/flexible_css.js"></script>
   <script src="js/flexible.js"></script>
   <script src="js/makegrid.js"></script>
@@ -22,13 +23,12 @@
     });
     window.onload = function(){
       document.body.addEventListener('touchstart', function () { });
-    }
-
+    };
   </script>
 </head>
 
 <body>
-  <div class="grid-warp">
+  <div class="grid-warp aweek">
     <div class="grid header">
       <div class="col-4"><img src="img/logo.svg"></div>
       <div class="col-4">
@@ -144,8 +144,8 @@
     图鉴
   </a>
   <div class="price">
-    <p>原价 ￥<span><strike>300</strike><span></p>
-    <p>折扣 ￥<span>168<span></p>
+    <p>原价 ￥<span><strike>300</strike></span></p>
+    <p>折扣 ￥<span>168</span></p>
   </div>
 </div>
 
@@ -188,6 +188,7 @@
       <a href="javascript:;"><i class="iconfont">&#xe605;</i> 新建收货地址</a>
     </div>
   </div>
+</div>
 </div>
 </body>
 </html>

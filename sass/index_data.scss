@@ -1,35 +1,15 @@
-[data-dpr="1"] .chooseDay{
-  font-size: 70px;
-  span{
-    font-size: 18px;
-  }
-}
-[data-dpr="1"] .chooseDay:last-child{
-  .iconfont{
-    font-size: 60px;
-  }
-}
-[data-dpr="2"] .chooseDay{
-  font-size: 90px;
-  span{
-    font-size: 24px;
-  }
-}
-[data-dpr="3"] .chooseDay{
-  font-size: 160px;
-  span{
-    font-size: 40px;
-  }
-}
+$selectBorderWidth:0.09375rem;
 .chooseDay{
   background:$white;
   text-align: center;
+  font-size: $px70;
   font-weight: 200;
   position: relative;
   margin-top: 0.08rem;
-  height: 2.4375rem-0.09375rem*2;
+  height: 2.4375rem-$selectBorderWidth*2;
   span{
     display: block;
+    font-size: $px20;
     padding: 0 0.2rem;
     text-align: left;
     position: absolute;
@@ -46,18 +26,16 @@
   }
   a{
     display: block;
-    padding: 0.6375rem-0.1475rem 0 0.3875rem-0.17375rem 0;
-    border: 0.09375rem solid $white;
-    color: #404040;
+    padding: 0.7375rem-0.1475rem 0 0.2875rem-0.17375rem 0;
+    border: $selectBorderWidth solid $white;
     height: 1.3575rem;
-    text-decoration: none;
   }
 }
 .chooseDay:last-child{
   .iconfont{
     display: block;
-    font-size: 120px;
-    color: #ffc600;
+    font-size: $selectWeek;
+    color: $yellow;
     margin-top: 0.2rem;
     top: 1rem;
   }
@@ -65,12 +43,10 @@
 .select{
   a{
     display: block;
-    color: #404040;
-    border: 0.09375rem solid #ff6700;
-    text-decoration: none;
+    border: $selectBorderWidth solid $orange;
   }
   .triangle_select{
-    border-bottom: 0.5625rem solid #ff6700;
+    border-bottom: 0.5625rem solid $orange;
     border-left: 0.5625rem solid transparent;
   }
   .triangle_select:after{
@@ -80,19 +56,19 @@
     -webkit-text-stroke-width: 0.2px;
     -moz-osx-font-smoothing: grayscale;
     content: "\e607";
-    color: #fff;
+    color: $white;
     position: absolute;
     display: block;
-    right: 8px;
-    top: 26px;
-    font-size: 26px;
+    right: 0.08rem;
+    top:  0.22rem;
+    font-size: $selectYes;
   }
   span{
-    color: #ff6700;
+    color: $orange;
   }
 }
 .empty{
   a,span{
-    color: #efefef;
+    color: $noneState;
   }
 }

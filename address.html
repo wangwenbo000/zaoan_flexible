@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta content="modeName=640-12" name="grid" />
+  <meta content="telephone=no" name="format-detection">
+  <meta name = "apple-mobile-web-app-capable" content = "yes" >
+  <script src="js/flexible_css.js"></script>
+  <script src="js/flexible.js"></script>
+  <script src="js/makegrid.js"></script>
+  <link href="stylesheets/index.css" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/iconfont.css" rel="stylesheet" type="text/css" />
+  <title>早安早安</title>
+  <script>
+    lib.flexible.makeGrid({
+      designWidth:640, // 设计稿宽度
+      designUnit:4, // 设计稿最小单位a（以px为单位）
+      columnCount:12, // 栅格列数
+      columnXUnit:11.4, // 栅格列宽（以a为单位）
+      gutterXUnit:1, // 栅格间距（以a为单位）
+      edgeXUnit:6, // 页面左右边距（以a为单位）
+    });
+    window.onload = function(){
+      document.body.addEventListener('touchstart', function () { });
+    };
+  </script>
+</head>
+
+<body>
+  <div class="grid-warp">
+    <div class="grid">
+      <table class="col-12 addresslist">
+        <tbody>
+          <tr></tr>
+        <tr>
+          <td colspan="3">
+            <p>王文博 15117909848</p>
+            <p>中央美术学院 设计大楼地下一层</p>
+          </td>
+        </tr>
+        <tr>
+          <td><span><i class="iconfont">&#xe60e;</i></span> 设为默认</td>
+          <td><i class="iconfont">&#xe60c;</i> 编辑</td>
+          <td><i class="iconfont">&#xe610;</i> 删除</td>
+        </tr>
+      </tbody>
+
+      <tbody>
+        <tr></tr>
+      <tr>
+        <td colspan="3">
+          <p>王文博 15117909848</p>
+          <p>中央美术学院 设计大楼地下一层</p>
+        </td>
+      </tr>
+      <tr>
+        <td><span></span>设为默认</td>
+        <td>编辑</td>
+        <td>删除</td>
+      </tr>
+    </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="footerlogo"></div>
+
+  <div class="footer">
+    <a href="javascript:;" class="addNewAddress"><i class="iconfont">&#xe605;</i>添加新地址</a>
+  </div>
+</body>
+</html>

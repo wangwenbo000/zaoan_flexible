@@ -1,31 +1,3 @@
-.footerlogo{
-  height: 0.65625rem;
-  margin-top: 0.3rem;
-  background: url('../img/footerlogo.png') no-repeat center top;
-  background-size: 40%;
-  padding-bottom: 1.53125rem;
-}
-
-[data-dpr="2"] .footer{
-  .submit{
-    font-size: 40px;
-  }
-  .order, .menu{
-    font-size: 26px;
-    span{
-      font-size: 60px;
-    }
-  }
-  .price{
-    p{
-      font-size: 26px;
-      span{
-        font-size: 42px;
-      }
-    }
-  }
-
-}
 .footer{
   width: 100%;
   position: fixed;
@@ -33,59 +5,62 @@
   height: 1.53125rem;
   bottom: 0;
   z-index: 10;
-  .submit{
+  .submit,.goingOn,.goOrder,.addNewAddress{
     height: 1.53125rem;
-    background-color: #ffc600;
+    background-color: $yellow;
     display: block;
     width: 3.3125rem;
     float: right;
     text-align: center;
     line-height: 1.53125rem;
-    color: #5d5d5d;
-    text-decoration: none;
-    font-size: 60px;
+    color: $gray5d;
+    font-size: $px30;
   }
-  .submit:active{
-    box-shadow:0 0 1rem #f68d47 inset;  
+  .submit:active,.goOrder:active,.addNewAddress:active{
+    box-shadow:0 0 1rem #f68d47 inset;
   }
   .order, .menu{
     float: right;
     display: block;
     width: 1.78125rem;
-    border-left: 1px solid #d0d0d0;
+    border-left: 1px solid $border;
     text-align: center;
     height: 100%;
-    text-decoration: none;
-    // line-height: 1.1rem;
-    color: #5d5d5d;
-    font-size: 40px;
+    font-size: $px20;
+    color: $gray5d;
     span{
       display: block;
-      // text-align: center;
-      font-size: 80px;
+      font-size: $footerIcon;
       line-height: 1rem;
     }
   }
   .sel_menu{
-      color:#ff6700;
+      color:$orange;
   }
   .price {
     p{
       text-indent: 0.32rem;
-      font-size: 40px;
+      font-size: $px20;
       span{
-        font-size: 60px;
+        font-size: $px32;
         font-weight: 200;
       }
     }
     p:first-child{
       margin-top: 0.24375rem;
       span{
-        color: #b2b2b2;
+        color: $graybf;
       }
     }
     p:last-child{
-      color: #ff6700;
+      color: $orange;
     }
   }
+}
+.footerlogo{
+  height: 0.65625rem;
+  margin-top: 0.3rem;
+  background: url('../img/footerlogo.png') no-repeat center top;
+  background-size: 40%;
+  padding-bottom: 1.53125rem;
 }

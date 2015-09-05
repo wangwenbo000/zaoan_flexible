@@ -7,15 +7,15 @@
   text-indent: 0.2rem;
   position: relative;
   span{
-    font-size: 80px;
+    font-size: $noticeClose;
     position: absolute;
     display: block;
     right: 0.2rem;
-    color: #d0d0d0;
+    color: $border;
     top: 0;
   }
   i{
-    font-size: 60px;
-    color: #ffc600;
+    font-size: $noticeIcon;
+    color: $yellow;
   }
 }

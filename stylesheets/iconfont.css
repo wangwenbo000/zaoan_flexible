@@ -14,8 +14,18 @@
   -webkit-text-stroke-width: 0.2px;
   -moz-osx-font-smoothing: grayscale;
 }
+.icon-edit:before { content: "\e60c"; }
+.icon-roundcheckfill:before { content: "\e60d"; }
+.icon-roundcheck:before { content: "\e60e"; }
+.icon-search:before { content: "\e60f"; }
 .icon-discover:before { content: "\e600"; }
+.icon-delete:before { content: "\e610"; }
 .icon-discoverfill:before { content: "\e601"; }
+.icon-message:before { content: "\e611"; }
+.icon-peisongzhong:before { content: "\e60b"; }
+.icon-friendfavor:before { content: "\e612"; }
+.icon-service:before { content: "\e613"; }
+.icon-weixin:before { content: "\e614"; }
 .icon-creative:before { content: "\e602"; }
 .icon-jian:before { content: "\e603"; }
 .icon-xinxi:before { content: "\e60a"; }
@@ -25,4 +35,3 @@
 .icon-order:before { content: "\e606"; }
 .icon-location:before { content: "\e609"; }
 .icon-icon:before { content: "\e608"; }
-.icon-icon3:before { content: "\e60b"; }

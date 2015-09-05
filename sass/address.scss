@@ -1,0 +1,27 @@
+.footer{
+  .addNewAddress{
+    width: 100%;
+  }
+}
+.addresslist{
+  tbody>tr:first-child{
+    height: 0.2rem;
+  }
+  tbody>tr:nth-child(2)>td{
+    background: $white url(../img/addresscolor.jpg) repeat-x;
+  }
+  tbody>tr:nth-child(2)>td>p:last-child{
+    font-size: $px22;
+    color: $gray89;
+    line-height: $px38;
+  }
+  tbody>tr:nth-child(3){
+    font-size: $px22;
+    color: $gray89;
+    text-align: center;
+    td:first-child{
+      width: 4rem;
+      text-align: left;
+    }
+  }
+}
