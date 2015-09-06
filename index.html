@@ -6,21 +6,19 @@
   <meta content="modeName=640-12" name="grid" />
   <meta content="telephone=no" name="format-detection">
   <meta name = "apple-mobile-web-app-capable" content = "yes" >
-  <script src="js/flexible_css.js"></script>
-  <script src="js/flexible.js"></script>
-  <script src="js/makegrid.js"></script>
+  <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.2/??flexible_css.js,flexible.js"></script>
+  <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.2/makegrid.js"></script>
   <link href="stylesheets/index.css" rel="stylesheet" type="text/css" />
-  <link href="stylesheets/iconfont.css" rel="stylesheet" type="text/css" />
   <title>早安早安</title>
   <script>
-    lib.flexible.makeGrid({
-      designWidth:640, // 设计稿宽度
-      designUnit:4, // 设计稿最小单位a（以px为单位）
-      columnCount:12, // 栅格列数
-      columnXUnit:11.4, // 栅格列宽（以a为单位）
-      gutterXUnit:1, // 栅格间距（以a为单位）
-      edgeXUnit:6, // 页面左右边距（以a为单位）
-    });
+  lib.flexible.makeGrid({
+    designWidth:640, // 设计稿宽度
+    designUnit:4, // 设计稿最小单位a（以px为单位）
+    columnCount:12, // 栅格列数
+    columnXUnit:12, // 栅格列宽（以a为单位）
+    gutterXUnit:1, // 栅格间距（以a为单位）
+    edgeXUnit:2.5, // 页面左右边距（以a为单位）
+  });
     window.onload = function(){
       document.body.addEventListener('touchstart', function () { });
     };
@@ -96,39 +94,59 @@
   </div>
 <div class="grid-warp">
   <div class="grid">
-    <div class="col-12">
-    <a href="javascript:;" class="subtraction"><i class="iconfont">&#xe603;</i></a>
-    <span>每天</span>
-    <input type="text" value="1">
-    <span>份</span>
-    <a href="javascript:;" class="plus"><i class="iconfont">&#xe605;</i></a>
-  </div>
+    <table class="col-12 numberBtn">
+      <tr>
+        <td>
+          <a href="javascript:;" class="subtraction"><i class="iconfont">&#xe603;</i></a>
+        </td>
+        <td>
+          每天
+        </td>
+        <td>
+          <input type="text" value="1">
+        </td>
+        <td>
+          份
+        </td>
+        <td>
+          <a href="javascript:;" class="plus"><i class="iconfont">&#xe605;</i></a>
+        </td>
+      </tr>
+    </table>
   </div>
 </div>
 <div class="grid-warp">
   <div class="grid">
-    <div class="col-12">
-      <i class="iconfont sel">&#xe608;</i>
-      <i class="iconfont sel">&#xe608;</i>
-      <select class="form-control" v-model="expressTime">
-        <option value="0">配送时间段</option>
-        <option>7:00-7:30</option>
-        <option>7:30-8:00</option>
-        <option>8:00-8:30</option>
-        <option>8:30-9:00</option>
-        <option>9:00-9:30</option>
-        <option>9:30-10:00</option>
-      </select>
-      <select class="form-control" v-model="receiveWay">
-        <option value="0">接收方式</option>
-        <!-- <option>早安盒子</option> -->
-        <option>公司前台</option>
-        <option>延迟配送</option>
-      </select>
-    </div>
-    <div class="col-12">
-      <a href="javascript:;"><i class="iconfont">&#xe609;</i>请添加接收地址</a>
-    </div>
+    <table class="col-12 formTable">
+      <tr>
+        <td>
+          <select class="form-control" v-model="receiveWay">
+            <option value="0">接收方式</option>
+            <!-- <option>早安盒子</option> -->
+            <option>公司前台</option>
+            <option>延迟配送</option>
+          </select>
+          <i class="iconfont sel">&#xe608;</i>
+        </td>
+        <td>
+          <select class="form-control" v-model="expressTime">
+            <option value="0">配送时间段</option>
+            <option>7:00-7:30</option>
+            <option>7:30-8:00</option>
+            <option>8:00-8:30</option>
+            <option>8:30-9:00</option>
+            <option>9:00-9:30</option>
+            <option>9:30-10:00</option>
+          </select>
+          <i class="iconfont sel">&#xe608;</i>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <a href="javascript:;"><i class="iconfont">&#xe609;</i>请添加接收地址</a>
+        </td>
+      </tr>
+    </table>
   </div>
 </div>
 <div class="footer">

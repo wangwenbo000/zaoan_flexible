@@ -55,9 +55,10 @@ table>tbody>tr>td{
 .orderInfo:before{
   content: '';
   display: block;
-  width: 92.3%;
+  width: 96.8%;
   position: absolute;
   top: 0.28rem;
+  left: 20px;
   background: url(../img/tiao.png) repeat-x;
   background-size: auto 100%;
   height: 0.3125rem;
@@ -69,9 +70,9 @@ table>tbody>tr>td{
   td>span:last-child{
     color: #582c0b;
   }
-  td:last-child>h2{
+  td:last-child>span:last-child{
     float: right;
-    margin-top: -0.4rem;
+    margin-top: -0.3rem;
     font-size: $px38;
     color: $orange;
   }
@@ -96,13 +97,6 @@ table>tbody>tr>td{
     font-size: $px20;
     margin-top: 0.1rem;
   }
-  td:last-child>span{
-    display: block;
-    padding: 0.2rem;
-    font-size: $px22;
-    color: $white;
-    text-align: center;
-  }
 }
 .orderContact{
   text-align: center;
@@ -118,7 +112,7 @@ table>tbody>tr>td{
 .orderBtn{
   a{
     display: block;
-    width: 4.40rem;
+    width: 4.64rem;
     height: 1.53125rem;
     text-align: center;
     line-height: 1.53125rem;

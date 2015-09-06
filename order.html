@@ -10,14 +10,14 @@
   <link href="stylesheets/iconfont.css" rel="stylesheet" type="text/css" />
   <title>早安早安</title>
   <script>
-    lib.flexible.makeGrid({
-      designWidth:640, // 设计稿宽度
-      designUnit:4, // 设计稿最小单位a（以px为单位）
-      columnCount:12, // 栅格列数
-      columnXUnit:11.4, // 栅格列宽（以a为单位）
-      gutterXUnit:1, // 栅格间距（以a为单位）
-      edgeXUnit:6, // 页面左右边距（以a为单位）
-    });
+  lib.flexible.makeGrid({
+    designWidth:640, // 设计稿宽度
+    designUnit:4, // 设计稿最小单位a（以px为单位）
+    columnCount:12, // 栅格列数
+    columnXUnit:12, // 栅格列宽（以a为单位）
+    gutterXUnit:1, // 栅格间距（以a为单位）
+    edgeXUnit:2.5, // 页面左右边距（以a为单位）
+  });
     window.onload = function(){
       document.body.addEventListener('touchstart',function(){});
     };
@@ -75,7 +75,7 @@
               总价<br/>
               <i>(折扣后)</i>
             </span>
-            <h2>￥180.00</h2>
+            <span>￥180.00</span>
           </td>
         </tr>
         <td colspan="4">
@@ -93,7 +93,7 @@
             <p>2015-08-22 星期二</p>
           </td>
           <td>
-            <span class="state33">代发货</span>
+            <span class="oState state33">代发货</span>
           </td>
         </tr>
         <tr class="orderList">
@@ -103,7 +103,7 @@
             <p>2015-08-22 星期二</p>
           </td>
           <td>
-            <span class="state40">代发货</span>
+            <span class="oState state40">代发货</span>
           </td>
         </tr>
       </table>
