@@ -51,6 +51,8 @@ body, html{
   color:$defalutWord;
   line-height:1;
 }
+[v-cloak]{display: none}
+
 @include font-face("iconfont",
   font-files(
   'iconfont.eot',
@@ -116,14 +118,14 @@ div{
   position: relative;
 }
 
-.grid-warp:nth-child(2),
-.grid-warp:nth-child(3){
-  margin-top: 0.21875rem;
-  .grid [class^="col-"]{
-    background: $white;
-    line-height: 1.40625rem;
-  }
-}
+// .grid-warp:nth-child(3),
+// .grid-warp:nth-child(4){
+//   margin-top: 0.21875rem;
+//   .grid [class^="col-"]{
+//     background: $white;
+//     line-height: 1.40625rem;
+//   }
+// }
 .oState{
   display: block;
   padding: 0.2rem;
